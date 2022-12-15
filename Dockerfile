@@ -1,7 +1,6 @@
 FROM python:3.8
 
-
-RUN pip install flask
+RUN pip install sentence_transformers sklearn.metrics.pairwise numpy pandas
 
 COPY app.py /app.py
 
