@@ -1,8 +1,8 @@
 FROM python:3.8
 
-RUN pip3 install -r requirements.txt
+COPY . .
 
-COPY app.py /app.py
+RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
 
